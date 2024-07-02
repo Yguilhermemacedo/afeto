@@ -1,0 +1,26 @@
+:root{
+    /* Tipografia */
+    --fonte-logo:'Anybody', sans-serif;
+    --fonte-principal:'DM Sans', sans-serif;
+    /* Cores */
+    --1-verde-escuro:#325746;
+    --2-verde-claro:#009172;
+    --3-verde-agua:#7bbd9f;
+    --4-branco-creme:#f3f2eb;
+    --5-branco-gelo:#ffffff;
+    --6-preto-esverdeado:#31302f;
+    --7-cinza-claro:#afafaf;
+    /* Medidas utilitárias */
+    --largura-max:100%;
+    /* Tamanho de fontes */
+    --titulos-grandes:35px;
+    --titulos-medios:22px;
+    --paragrafos:16px;
+}
+
+/* Classes utilitárias */
+.texto-logo{
+    font-family: var(--fonte-logo);
+    color: var(--1-verde-escuro);
+}
+

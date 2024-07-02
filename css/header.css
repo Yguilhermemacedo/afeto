@@ -1,0 +1,78 @@
+:root{
+    /* Tipografia */
+    --fonte-logo:'Anybody', sans-serif;
+    --fonte-principal:'DM Sans', sans-serif;
+    /* Cores */
+    --1-verde-escuro:#325746;
+    --2-verde-claro:#009172;
+    --3-verde-agua:#7bbd9f;
+    --4-branco-creme:#f3f2eb;
+    --5-branco-gelo:#ffffff;
+    --6-preto-esverdeado:#31302f;
+    --7-cinza-claro:#afafaf;
+    /* Medidas utilitárias */
+    --largura-max:100%;
+    /* Tamanho de fontes */
+    --titulos-grandes:35px;
+    --titulos-medios:22px;
+    --paragrafos:16px;
+}
+
+header{
+    background-color: var(--5-branco-gelo);
+    position: fixed;
+    top: 10px;
+    padding: 20px;
+    height: 15vh;
+    width: 100%;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    height: auto;
+    width: 200px;
+}
+
+.burguer{
+    display: none;
+}
+
+.menu__lista{
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu__link{
+    font-size: 19px;
+    font-family: var(--fonte-principal);
+    color: var(--6-preto-esverdeado);
+    transition:all 0.3s ease-in-out;
+}
+.menu__link:hover{
+    color: var(--1-verde-escuro);
+    font-weight: 600;
+}
+
+#btn-contato{
+    background-color: var(--6-preto-esverdeado);
+    padding: 10px;
+    color: var(--5-branco-gelo);
+    border: none;
+    border-radius: 40px;
+    font-size: 17px;
+    font-family: var(--fonte-principal);
+    width: 170px;
+    transition:all 0.3s ease-in-out;
+}
+
+#btn-contato:hover{
+    background-color: var(--1-verde-escuro);
+}

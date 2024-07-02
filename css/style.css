@@ -1,0 +1,35 @@
+:root{
+    /* Tipografia */
+    --fonte-logo:'Anybody', sans-serif;
+    --fonte-principal:'DM Sans', sans-serif;
+    /* Cores */
+    --1-verde-escuro:#325746;
+    --2-verde-claro:#009172;
+    --3-verde-agua:#7bbd9f;
+    --4-branco-creme:#f3f2eb;
+    --5-branco-gelo:#ffffff;
+    --6-preto-esverdeado:#31302f;
+    --7-cinza-claro:#afafaf;
+    /* Medidas utilitárias */
+    --padding-container-10:10px;
+    --padding-container-20:20px;
+    --largura-max:100%;
+    /* Tamanho de fontes */
+    --titulos-grandes:35px;
+    --titulos-medios:22px;
+    --paragrafos:16px;
+}
+
+body{
+    
+    background-color: var(--4-branco-creme);
+    transition: all 2s ease-in-out;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type:none;
+}
