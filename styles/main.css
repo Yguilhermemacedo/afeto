@@ -1,0 +1,118 @@
+main #home {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 60px;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+main #home .banner__home {
+  width: 50%;
+  height: auto;
+}
+main #home .banner__home img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main #home .texto__container {
+  width: 50%;
+  padding: 20px;
+  font-family: "DM Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+main #home .texto__container h2 {
+  font-size: 2rem;
+  color: #009172;
+  text-align: left;
+}
+main #home .texto__container h2 .texto__destaque {
+  font-family: "Anybody", sans-serif;
+  color: #325746;
+}
+main #home .texto__container h1 {
+  font-size: 3rem;
+  color: #31302F;
+}
+main #home .texto__container p {
+  font-size: 1.25rem;
+  color: #31302F;
+}
+main #home .texto__container .btn-chamada {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 15px 30px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
+  border-radius: 30px;
+  border: none;
+  background-color: #009172;
+  color: #f3f2eb;
+  transition: all 0.3s ease-in-out;
+  align-self: start;
+}
+main #home .texto__container .btn-chamada:hover {
+  background-color: #00795e;
+  transform: translateY(-5px);
+}
+@media (max-width: 1024px) {
+  main section#home {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  main section#home .banner__home {
+    width: 100%;
+    height: auto;
+  }
+  main section#home .texto__container {
+    width: 100%;
+    padding: 20px;
+  }
+}
+@media (max-width: 768px) {
+  main section#home .banner__home {
+    height: 40vh;
+  }
+  main section#home .texto__container h2 {
+    font-size: 1.75rem;
+  }
+  main section#home .texto__container h1 {
+    font-size: 2.5rem;
+  }
+  main section#home .texto__container p {
+    font-size: 1rem;
+  }
+  main section#home .texto__container .btn-chamada {
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 10px 20px;
+    font-size: 0.875rem;
+  }
+}
+@media (max-width: 480px) {
+  main section#home .banner__home {
+    height: 30vh;
+  }
+  main section#home .texto__container h2 {
+    font-size: 1.5rem;
+  }
+  main section#home .texto__container h1 {
+    font-size: 2rem;
+  }
+  main section#home .texto__container p {
+    font-size: 0.875rem;
+  }
+  main section#home .texto__container .btn-chamada {
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 10px 15px;
+    font-size: 0.75rem;
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,152 @@
+body {
+  background-color: #f3f2eb;
+}
+
+header {
+  height: 15vh;
+  width: 90%;
+  background-color: #FFFFFF;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-radius: 90px;
+  box-shadow: 3px 0px 10px rgba(172, 172, 172, 0.185);
+}
+header .logo {
+  max-width: 300px;
+  width: 300px;
+}
+header .logo img {
+  height: 250px;
+  width: 250px;
+}
+header #menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+header #menu .burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+}
+header #menu .burger span {
+  width: 30px;
+  height: 3px;
+  background-color: #325746;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: center;
+}
+header #menu .burger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+header #menu .burger.open span:nth-child(2) {
+  opacity: 0;
+}
+header #menu .burger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+header #menu ul {
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+}
+header #menu ul li a {
+  font-size: 24px;
+  font-family: "DM Sans", sans-serif;
+  color: #31302F;
+  position: relative;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+header #menu ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #325746;
+  transition: width 0.3s ease-in-out;
+}
+header #menu ul li a:hover::after {
+  width: 100%;
+}
+header #menu ul li a:hover {
+  color: #325746;
+  font-weight: 600;
+}
+header #menu ul li .btn-contato {
+  width: 200px;
+  font-size: 20px;
+  padding: 10px;
+  background-color: #31302F;
+  border: none;
+  border-radius: 30px;
+  color: #f3f2eb;
+  font-family: "DM Sans", sans-serif;
+  transition: all 0.2s ease-in-out;
+}
+header #menu ul li .btn-contato:hover {
+  letter-spacing: 1px;
+  background-color: #325746;
+  font-weight: 600;
+}
+header #menu ul li .btn-contato::after {
+  content: none;
+}
+@media (max-width: 1024px) {
+  header #menu ul {
+    flex-direction: column;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    height: 90vh;
+    width: 100%;
+    padding-top: 3.5rem;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  header #menu ul.open {
+    transform: translateX(0);
+  }
+  header #menu ul li {
+    margin: 20px 0;
+  }
+  header #menu .burger {
+    display: flex;
+  }
+}
+@media (max-width: 768px) {
+  header #menu ul {
+    width: 100%;
+  }
+  header #menu .burger {
+    width: 25px;
+    height: 20px;
+  }
+  header #menu .burger span {
+    width: 25px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1366px) {
+  header #menu ul {
+    justify-content: space-around;
+  }
+}/*# sourceMappingURL=header.css.map */
