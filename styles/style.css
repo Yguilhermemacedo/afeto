@@ -1,8 +1,24 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
 }
 
+/* Variáveis */
+:root{
+    /* Fontes */
+    --ft-principal:'DM Sans', sans-serif;
+    --ft-destaque:'Anybody',sans-serif;
+
+    /* Cores */
+    --cor-primaria:#325746;
+    --cor-secundaria:#009172;
+    --cor-terciaria:#F3F2EB;
+    --cor-quartenaria:#31302F;
+}
+
+body{
+    background-color: var(--cor-terciaria);
+}
