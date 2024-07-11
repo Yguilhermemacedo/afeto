@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <!-- Estlizição do Header -->
     <link rel="stylesheet" href="styles/header.css">
@@ -41,9 +42,6 @@
     </header>
     <main>
         <section id="home">
-            <div class="banner__home">
-                <img src="assets/img-principais/banner-home.png" alt="Ilustrações de cuidadora ajudando idosos">
-            </div>
             <article class="texto__container">
                 <h2>Seja bem vindo á <span class="texto__destaque">Afeto</span>!</h2>
                 <h1>Cuidado e carinho para uma vida mais plena</h1>
@@ -51,7 +49,96 @@
                 <button class="btn-chamada">Saiba mais</button>
             </article>
         </section>
+        <section id="sobre">
+            <img src="assets/img-principais/ilustracao-3.png" alt="Cuidadora e idoso" class="banner-sobre">
+            <article class="conteudo-home">
+                <h2>Sobre</h2>
+                <h1>Conheça mais <span class="texto__destaque">sobre</span> nós da <span class="texto__destaque">Afeto</span></h1>
+                <p>Bem-vindo à Afeto, onde nosso compromisso é proporcionar um cuidado excepcional e personalizado que transforma vidas. Nossa missão é garantir que cada idoso receba o carinho, a atenção e o suporte necessários para viver com dignidade, conforto e alegria.</p><br>
+                <p>Na Afeto, acreditamos que cada idoso merece um cuidado que vá além das necessidades básicas. Nossa equipe é composta por cuidadores experientes e dedicados, que se esforçam para criar um ambiente acolhedor e seguro para todos os nossos clientes. Valorizamos cada indivíduo, reconhecendo suas histórias, suas necessidades e suas preferências, para oferecer um cuidado verdadeiramente personalizado.</p>
+                <button class="btn-chamada">Consulte-nos</button>
+            </article>
+        </section>
+        <section id="servicos">
+            <h2>Descubra como a Afeto oferece conforto e qualidade de vida com serviços personalizados para nossos queridos idosos.</h2>
+            <div class="container__cards">
+                <div class="card">
+                    <img src="assets/img-principais/domicilio.png" alt="Icone de um cuidado domiciliar">
+                    <h3>Cuidados em casa</h3>
+                    <p>Manter o ambiente limpo e organizado, prevenir acidentes cuidar de roupas e objetos pessoais do paciente.</p>
+                </div>
+                <div class="card">
+                    <img src="assets/img-principais/coracao.png" alt="">
+                    <h3>Prezar pela saúde</h3>
+                    <p>Seguimos o acompanhamento médico do paciente e orientações, horário de medicações, acompanhamento em consultas.</p>
+                </div>
+                <div class="card">
+                    <img src="assets/img-principais/cuidados.png" alt="ícone de cuidados pessoais">
+                    <h3>Cuidados pessoais</h3>
+                    <p>Ajuda com higiene pessoal, incluindo conforto e cuidados com a pele.</p>
+                </div>
+                <div class="card">
+                    <img src="./assets/img-principais/companhia.png" alt="ícone de companhia">
+                    <h3>Bem-estar</h3>
+                    <p>Conversas e atividades recreativas para a saúde mental. Promover momentos de afetividade.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contato">
+            <div id="form-contato">
+                <img src="assets/img-principais/banner-form.png" alt="Imagem de uma cuidadora e uma idosa">
+                <form>
+                    <h1>Encontre a cuidadora ideal com a <span class="text__destaque">Afeto</span></h1>
+                    <div>
+                        <label for="nome-tutor">Nome do tutor</label>
+                        <input type="text" name="nome-tutor" id="nome-tutor" placeholder="Digite seu nome" required>
+                    </div>
+                    <div>
+                        <label for="nome-paciente">Nome do paciente</label>
+                        <input type="text" name="nome-paciente" id="nome-paciente" placeholder="Digite o nome do paciente" required>
+                    </div>
+                    <div>
+                        <label for="Idade">Idade</label>
+                        <input type="text" name="idade" id="idade" placeholder="Qual a idade do paciente?" required>
+                    </div>
+                    <div>
+                        <label for="patologia">Patologia</label>
+                        <input type="text" name="patologia" id="patologia" placeholder="Qual a patologia do paciente?" required>
+                    </div>
+                    <div>
+                        <label for="endereco">Endereço</label>
+                        <input type="text" name="endereco" id="endereco" placeholder="Qual seu bairro?" required>
+                    </div>
+                    <div>
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" name="telefone" id="telefone" placeholder="Insira seu telefone" required>
+                    </div>
+                    <div class="container-button">
+                        <button class="btn-form">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section id="depoimentos">
+            <h2>Depoimentos</h2>
+            <div class="depoimento">
+                <div class="imagem"></div>
+                <div class="content-depoimento">
+                    <p><span class="aspas">"</span>Precisei de alguém de confiança para cuidar de meus pais, em bom período, a cuidadora da Afeto, em seus plantões cuidou com muito carinho e cuidado. Considero a mesma com cuidadoras comprometidas  e confiáveis. <span class="aspas">"</span></p>
+                    <p>Maria José</p>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer>
+        <div class="logo-footer"><img src="assets/img-principais/logo-footer.png" alt="Logo rodapé"></div>
+        <div class="infos-footer">
+            <p>Venha fazer parte da Afeto</p>
+            <p>Entre em contato conosco</p>
+            <p>Atendemos em toda grande São Paulo</p>
+        </div>
+        <div class="creditos">Site e design desenvolvido por Guilherme Macedo</div>
+    </footer>
     <script src="js/script.js"></script>
 </body>
 </html>
