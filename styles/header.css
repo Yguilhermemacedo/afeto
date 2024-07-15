@@ -1,117 +1,94 @@
 header {
+  height: 15vh;
+  width: 90%;
+  margin: 1rem auto;
+  background-color: white;
+  padding: 30px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
   align-items: center;
-  padding: 20px;
-  background-color: #fff;
-  height: 20vh;
-  width: 100%;
+  justify-content: space-between;
+  border-radius: 90px;
+  box-shadow: 10px 10px 30px rgba(197, 197, 197, 0.226);
 }
 header .logo img {
-  width: 150px;
+  height: auto;
+  width: 300px;
 }
-header nav {
+header #menu {
+  width: 800px;
+}
+header #menu #checkbox {
+  display: none;
+}
+header #menu .toggle {
   position: relative;
-}
-header nav .burger {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
   display: none;
   flex-direction: column;
-  justify-content: space-between;
-  width: 25px;
-  height: 20px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  z-index: 2;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+  transition-duration: 0.5s;
 }
-header nav .burger span {
-  display: block;
+header #menu .bars {
   width: 100%;
-  height: 3px;
-  background-color: #333;
-  transition: all 0.3s;
+  height: 4px;
+  background-color: #325746;
+  border-radius: 4px;
 }
-header nav .burger:hover span {
-  background-color: #666;
+header #menu #bar2 {
+  transition-duration: 0.8s;
 }
-header nav #menu-list {
-  width: 700px;
+header #menu #bar1 {
+  width: 50%;
+}
+header #menu #bar2 {
+  width: 75%;
+}
+header #menu #checkbox:checked + .toggle .bars {
+  position: absolute;
+  transition-duration: 0.5s;
+}
+header #menu #checkbox:checked + .toggle #bar2 {
+  transform: scaleX(0);
+  transition-duration: 0.1s;
+}
+header #menu #checkbox:checked + .toggle #bar1 {
+  width: 100%;
+  transform: rotate(45deg);
+  transition-duration: 0.5s;
+}
+header #menu #checkbox:checked + .toggle #bar3 {
+  width: 100%;
+  transform: rotate(-45deg);
+  transition-duration: 0.5s;
+}
+header #menu #checkbox:checked + .toggle {
+  transition-duration: 0.5s;
+  transform: rotate(180deg);
+}
+header #menu #menu-list {
+  height: 30px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
-  transition: right 0.3s ease-in-out;
 }
-header nav #menu-list .item {
-  margin: 15px 0;
-}
-header nav #menu-list .item .link {
-  color: #31302F;
+header #menu #menu-list li a {
   font-family: "DM Sans", sans-serif;
-  text-decoration: none;
-  font-size: 22px;
-  transition: color 0.3s;
+  color: #31302F;
+  font-size: 24px;
+  font-weight: 500;
+  transition: all 0.2s linear;
 }
-header nav #menu-list .item .link:hover {
-  color: #009172;
-}
-header nav.active #menu-list {
-  right: 0;
-}
-
-@media (min-width: 768px) {
-  nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  nav .burger {
-    display: none;
-  }
-  nav #menu-list {
-    position: static;
-    height: auto;
-    width: auto;
-    display: flex;
-    flex-direction: row;
-    background-color: transparent;
-  }
-  nav #menu-list .item {
-    margin: 0 15px;
-  }
-  nav #menu-list .item .link {
-    color: #333;
-    font-size: 16px;
-  }
-  nav #menu-list .item .link:hover {
-    color: #666;
-  }
-}
-@media (max-width: 767px) {
-  nav .burger {
-    display: flex;
-  }
-  nav #menu-list {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: #fff;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  nav #menu-list .item {
-    width: 100%;
-    text-align: center;
-    margin: 10px 0;
-  }
-  nav #menu-list .item .link {
-    font-size: 18px;
-  }
-  nav.active #menu-list {
-    display: flex;
-  }
+header #menu #menu-list li a:hover {
+  color: #325746;
+  font-weight: 700;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #009172;
 }
 
 /*# sourceMappingURL=header.css.map */
