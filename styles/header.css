@@ -1,94 +1,150 @@
 header {
   height: 15vh;
-  width: 90%;
-  margin: 1rem auto;
-  background-color: white;
+  width: 97%;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  border-radius: 10px;
+  background-color: #fff;
   padding: 30px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  border-radius: 90px;
-  box-shadow: 10px 10px 30px rgba(197, 197, 197, 0.226);
+  z-index: 1000;
 }
-header .logo img {
+header .logo {
   height: auto;
-  width: 300px;
+  width: 230px;
 }
-header #menu {
-  width: 800px;
-}
-header #menu #checkbox {
-  display: none;
-}
-header #menu .toggle {
-  position: relative;
-  width: 40px;
-  height: 40px;
+header #burguer {
+  height: 64px;
+  width: 64px;
+  font-size: 54px;
+  border: none;
+  background-color: transparent;
   cursor: pointer;
+  color: #325746;
   display: none;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 10px;
-  transition-duration: 0.5s;
-}
-header #menu .bars {
-  width: 100%;
-  height: 4px;
-  background-color: #325746;
-  border-radius: 4px;
-}
-header #menu #bar2 {
-  transition-duration: 0.8s;
-}
-header #menu #bar1 {
-  width: 50%;
-}
-header #menu #bar2 {
-  width: 75%;
-}
-header #menu #checkbox:checked + .toggle .bars {
-  position: absolute;
-  transition-duration: 0.5s;
-}
-header #menu #checkbox:checked + .toggle #bar2 {
-  transform: scaleX(0);
-  transition-duration: 0.1s;
-}
-header #menu #checkbox:checked + .toggle #bar1 {
-  width: 100%;
-  transform: rotate(45deg);
-  transition-duration: 0.5s;
-}
-header #menu #checkbox:checked + .toggle #bar3 {
-  width: 100%;
-  transform: rotate(-45deg);
-  transition-duration: 0.5s;
-}
-header #menu #checkbox:checked + .toggle {
-  transition-duration: 0.5s;
-  transform: rotate(180deg);
 }
 header #menu #menu-list {
-  height: 30px;
+  position: absolute;
+  top: 7rem;
+  left: 0;
+  height: 0;
   width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  background-color: #fff;
+  overflow: hidden;
+  transition: height 0.5s ease-in-out;
 }
-header #menu #menu-list li a {
+header #menu #menu-list .menu-link {
+  font-size: 23px;
   font-family: "DM Sans", sans-serif;
   color: #31302F;
-  font-size: 24px;
   font-weight: 500;
-  transition: all 0.2s linear;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
-header #menu #menu-list li a:hover {
-  color: #325746;
+header #menu #menu-list .btn-contato {
+  width: 200px;
+  padding: 15px;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #31302F;
+  transition: all 0.3s linear, opacity 0.5s ease-in-out;
   font-weight: 700;
-  padding-bottom: 5px;
-  border-bottom: 2px solid #009172;
+  letter-spacing: 1px;
+  font-family: "DM Sans", sans-serif;
+  opacity: 0;
+}
+header #menu #menu-list .btn-contato:hover {
+  color: #e0e0e0;
+  background-color: #325746;
+  box-shadow: 3px 3px 0px #31302F;
+}
+header #menu.open #menu-list {
+  height: 500px;
+}
+header #menu.open #menu-list .menu-link,
+header #menu.open #menu-list .btn-contato {
+  opacity: 1;
+}
+
+@media (max-width: 1024px) {
+  header {
+    width: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 0;
+    padding: 10px 20px;
+    justify-content: space-between;
+  }
+  header .logo {
+    width: 200px;
+  }
+  header #burguer {
+    display: flex;
+  }
+  header #menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 0 0 20px 20px;
+    overflow: hidden;
+  }
+  header #menu.open {
+    max-height: 500px;
+  }
+  header #menu #menu-list {
+    flex-direction: column;
+    justify-content: center;
+  }
+  header #menu #menu-list .menu-link {
+    margin: 10px 0;
+  }
+  header #menu #menu-list .btn-contato {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 390px) {
+  header {
+    position: fixed;
+    left: 1rem;
+    width: calc(100% - 2rem);
+  }
+  header .logo {
+    width: 150px;
+  }
+  header #menu {
+    width: 100%;
+  }
+  header #menu-list {
+    height: auto;
+    width: 100%;
+    position: absolute;
+    top: 7rem;
+    left: 0;
+    background-color: #009172;
+    display: flex;
+    border-radius: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  header #menu-list .menu-link,
+  header #menu-list .btn-contato {
+    color: #fff;
+  }
 }
 
 /*# sourceMappingURL=header.css.map */

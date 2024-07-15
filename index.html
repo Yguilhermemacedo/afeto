@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <!-- Estlizição do Header -->
@@ -20,24 +21,17 @@
 </head>
 <body>
     <header>
-        <!-- Logo -->
-        <div class="logo">
-            <img src="assets/img-principais/logo.png" alt="Logo da Afeto">
-        </div>
-        <!-- Menu -->
+        <!-- Logo -->   
+            <img class="logo" src="assets/img-principais/logo.png" alt="Logo da Afeto">
+         <!-- Menu -->
          <nav id="menu">
             <!-- Menu responsivo -->
-            <input id="checkbox" type="checkbox">
-            <label class="toggle" for="checkbox">
-                <div id="bar1" class="bars"></div>
-                <div id="bar2" class="bars"></div>
-                <div id="bar3" class="bars"></div>
-            </label>
+            <button id="burguer"><i class='bx bx-menu'></i></button>
             <ul id="menu-list">
-                <li class="item"><a href="#servicos" class="link">Serviços</a></li>
-                <li class="item"><a href="#sobre" class="link">Sobre</a></li>
-                <li class="item"><a href="#depoimentos" class="link">Depoimentos</a></li>
-                <li class="item"><a href="#contato">Contato</a></li>
+                <li class="item"><a href="#servicos" class="menu-link">Serviços</a></li>
+                <li class="item"><a href="#sobre" class="menu-link">Sobre</a></li>
+                <li class="item"><a href="#depoimentos" class="menu-link">Depoimentos</a></li>
+                <li class="item"><button class="btn-contato">Contato</button></li>
             </ul>
          </nav>
     </header>
