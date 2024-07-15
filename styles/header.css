@@ -1,150 +1,77 @@
-header {
-  height: 15vh;
-  width: 97%;
-  position: fixed;
-  top: 1rem;
-  left: 1rem;
-  border-radius: 10px;
-  background-color: #fff;
-  padding: 30px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 1000;
+header{
+    position: fixed;
+    height: 15vh;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
 }
-header .logo {
-  height: auto;
-  width: 230px;
-}
-header #burguer {
-  height: 64px;
-  width: 64px;
-  font-size: 54px;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  color: #325746;
-  display: none;
-}
-header #menu #menu-list {
-  position: absolute;
-  top: 7rem;
-  left: 0;
-  height: 0;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
-  background-color: #fff;
-  overflow: hidden;
-  transition: height 0.5s ease-in-out;
-}
-header #menu #menu-list .menu-link {
-  font-size: 23px;
-  font-family: "DM Sans", sans-serif;
-  color: #31302F;
-  font-weight: 500;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-header #menu #menu-list .btn-contato {
-  width: 200px;
-  padding: 15px;
-  border: none;
-  border-radius: 30px;
-  font-size: 18px;
-  color: #fff;
-  background-color: #31302F;
-  transition: all 0.3s linear, opacity 0.5s ease-in-out;
-  font-weight: 700;
-  letter-spacing: 1px;
-  font-family: "DM Sans", sans-serif;
-  opacity: 0;
-}
-header #menu #menu-list .btn-contato:hover {
-  color: #e0e0e0;
-  background-color: #325746;
-  box-shadow: 3px 3px 0px #31302F;
-}
-header #menu.open #menu-list {
-  height: 500px;
-}
-header #menu.open #menu-list .menu-link,
-header #menu.open #menu-list .btn-contato {
-  opacity: 1;
+  
+.logo img{
+    height: auto;
+    width: 200px;
 }
 
-@media (max-width: 1024px) {
-  header {
-    width: 100%;
-    left: 0;
-    top: 0;
-    border-radius: 0;
-    padding: 10px 20px;
-    justify-content: space-between;
-  }
-  header .logo {
-    width: 200px;
-  }
-  header #burguer {
+#burguer{
+    height: 64px;
+    width: 64px;
+    font-size: 54px;
     display: flex;
-  }
-  header #menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    flex-direction: column;
-    background-color: #fff;
-    border-radius: 0 0 20px 20px;
-    overflow: hidden;
-  }
-  header #menu.open {
-    max-height: 500px;
-  }
-  header #menu #menu-list {
-    flex-direction: column;
-    justify-content: center;
-  }
-  header #menu #menu-list .menu-link {
-    margin: 10px 0;
-  }
-  header #menu #menu-list .btn-contato {
-    margin-top: 20px;
-  }
-}
-@media (max-width: 390px) {
-  header {
-    position: fixed;
-    left: 1rem;
-    width: calc(100% - 2rem);
-  }
-  header .logo {
-    width: 150px;
-  }
-  header #menu {
-    width: 100%;
-  }
-  header #menu-list {
-    height: auto;
-    width: 100%;
-    position: absolute;
-    top: 7rem;
-    left: 0;
-    background-color: #009172;
-    display: flex;
-    border-radius: 30px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-  header #menu-list .menu-link,
-  header #menu-list .btn-contato {
-    color: #fff;
-  }
+    background-color: transparent;
+    border: none;
+    color: #325746;
 }
 
-/*# sourceMappingURL=header.css.map */
+#menu-list{
+    position: absolute;
+    top: 7rem;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 400px;
+    padding: 20px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    transition: all 0.3s linear;
+}
+
+.menu-link{
+    font-size: 24px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    color: #31302f;
+}
+
+.btn-contato{
+    width: 200px;
+    padding: 20px;
+    border: none;
+    font-size: 20px;
+    background-color: #31302f;
+    color: #fff;
+    border-radius: 40px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+@media (min-width: 1280px) {
+    #menu-list {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: 0;
+        background-color: transparent;
+    }
+
+    #burguer {
+        display: none;
+    }
+}

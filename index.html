@@ -22,7 +22,7 @@
 <body>
     <header>
         <!-- Logo -->   
-            <img class="logo" src="assets/img-principais/logo.png" alt="Logo da Afeto">
+            <div class="logo"><img src="assets/img-principais/logo.png" alt="Logo da Afeto"></div>
          <!-- Menu -->
          <nav id="menu">
             <!-- Menu responsivo -->
@@ -45,14 +45,13 @@
             </article>
         </section>
         <section id="sobre">
-            <img src="assets/img-principais/ilustracao-3.png" alt="Cuidadora e idoso" class="banner-sobre">
             <article class="conteudo-home">
-                <h2>Sobre</h2>
                 <h1>Conheça mais <span class="texto__destaque">sobre</span> nós da <span class="texto__destaque">Afeto</span></h1>
-                <p>Bem-vindo à Afeto, onde nosso compromisso é proporcionar um cuidado excepcional e personalizado que transforma vidas. Nossa missão é garantir que cada idoso receba o carinho, a atenção e o suporte necessários para viver com dignidade, conforto e alegria.</p><br>
+                <p>Bem-vindo à Afeto, onde nosso compromisso é proporcionar um cuidado excepcional e personalizado que transforma vidas. Nossa missão é garantir que cada idoso receba o carinho, a atenção e o suporte necessários para viver com dignidade, conforto e alegria.</p>
                 <p>Na Afeto, acreditamos que cada idoso merece um cuidado que vá além das necessidades básicas. Nossa equipe é composta por cuidadores experientes e dedicados, que se esforçam para criar um ambiente acolhedor e seguro para todos os nossos clientes. Valorizamos cada indivíduo, reconhecendo suas histórias, suas necessidades e suas preferências, para oferecer um cuidado verdadeiramente personalizado.</p>
                 <button class="btn-chamada">Consulte-nos</button>
             </article>
+            <img src="assets/img-principais/ilustracao-3.png" alt="Cuidadora e idoso" class="banner-sobre">
         </section>
         <section id="servicos">
             <h2>Descubra como a Afeto oferece conforto e qualidade de vida com serviços personalizados para nossos queridos idosos.</h2>
@@ -81,9 +80,9 @@
         </section>
         <section id="contato">
             <div id="form-contato">
-                <img src="assets/img-principais/banner-form.png" alt="Imagem de uma cuidadora e uma idosa">
+               <div class="banner-form"></div>
                 <form>
-                    <h1>Encontre a cuidadora ideal com a <span class="text__destaque">Afeto</span></h1>
+                    <h1>Encontre a cuidadora ideal com a <span class="texto__destaque">Afeto</span></h1>
                     <div>
                         <label for="nome-tutor">Nome do tutor</label>
                         <input type="text" name="nome-tutor" id="nome-tutor" placeholder="Digite seu nome" required>
@@ -108,7 +107,7 @@
                         <label for="telefone">Telefone</label>
                         <input type="tel" name="telefone" id="telefone" placeholder="Insira seu telefone" required>
                     </div>
-                    <div class="container-button">
+                    <div class="container-button" style="width: 100%; display: flex; flex-direction: row; justify-content: center;">
                         <button class="btn-form">Enviar</button>
                     </div>
                 </form>
