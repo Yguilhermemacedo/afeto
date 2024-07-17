@@ -4,135 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Afeto Cuidado para Idosos</title>
-    <link rel="shortcut icon" href="assets/img-principais/icone-afeto.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/icone-afeto.png" type="image/x-icon">
+    <!-- Reset de estilo -->
+    <link rel="stylesheet" href="styles/reset.css">
+    <!-- Estilização do header -->
+    <link rel="stylesheet" href="styles/header.css">
+    <!-- Estilização do Main -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- Estilização do Footer -->
+    <link rel="stylesheet" href="styles/footer.css">
     <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Ícones -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <!-- Estlizição do Header -->
-    <link rel="stylesheet" href="styles/header.css">
-    <!-- Estilização Main -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- Estilização Footer -->
-     <link rel="stylesheet" href="styles/footer.css">
 </head>
 <body>
-    <header>
-        <!-- Logo -->   
-            <div class="logo"><img src="assets/img-principais/logo.png" alt="Logo da Afeto"></div>
-         <!-- Menu -->
-         <nav id="menu">
-            <!-- Menu responsivo -->
-            <button id="burguer"><i class='bx bx-menu'></i></button>
-            <ul id="menu-list">
-                <li class="item"><a href="#servicos" class="menu-link">Serviços</a></li>
-                <li class="item"><a href="#sobre" class="menu-link">Sobre</a></li>
-                <li class="item"><a href="#depoimentos" class="menu-link">Depoimentos</a></li>
-                <li class="item"><button class="btn-contato">Contato</button></li>
-            </ul>
-         </nav>
-    </header>
-    <main>
-        <section id="home">
-            <article class="texto__container">
-                <h2>Seja bem vindo á <span class="texto__destaque">Afeto</span>!</h2>
-                <h1>Cuidado e carinho para uma vida mais plena</h1>
-                <p>Estamos ao seu dispor e compromisso em atender ás suas necessidades em todas ass fases da vida.</p>
-                <button class="btn-chamada">Saiba mais</button>
-            </article>
-        </section>
-        <section id="sobre">
-            <article class="conteudo-home">
-                <h1>Conheça mais <span class="texto__destaque">sobre</span> nós da <span class="texto__destaque">Afeto</span></h1>
-                <p>Bem-vindo à Afeto, onde nosso compromisso é proporcionar um cuidado excepcional e personalizado que transforma vidas. Nossa missão é garantir que cada idoso receba o carinho, a atenção e o suporte necessários para viver com dignidade, conforto e alegria.</p>
-                <p>Na Afeto, acreditamos que cada idoso merece um cuidado que vá além das necessidades básicas. Nossa equipe é composta por cuidadores experientes e dedicados, que se esforçam para criar um ambiente acolhedor e seguro para todos os nossos clientes. Valorizamos cada indivíduo, reconhecendo suas histórias, suas necessidades e suas preferências, para oferecer um cuidado verdadeiramente personalizado.</p>
-                <button class="btn-chamada">Consulte-nos</button>
-            </article>
-            <img src="assets/img-principais/ilustracao-3.png" alt="Cuidadora e idoso" class="banner-sobre">
-        </section>
-        <section id="servicos">
-            <h2>Descubra como a Afeto oferece conforto e qualidade de vida com serviços personalizados para nossos queridos idosos.</h2>
-            <div class="container__cards">
-                <div class="card">
-                    <img src="assets/img-principais/domicilio.png" alt="Icone de um cuidado domiciliar">
-                    <h3>Cuidados em casa</h3>
-                    <p>Manter o ambiente limpo e organizado, prevenir acidentes cuidar de roupas e objetos pessoais do paciente.</p>
-                </div>
-                <div class="card">
-                    <img src="assets/img-principais/coracao.png" alt="">
-                    <h3>Prezar pela saúde</h3>
-                    <p>Seguimos o acompanhamento médico do paciente e orientações, horário de medicações, acompanhamento em consultas.</p>
-                </div>
-                <div class="card">
-                    <img src="assets/img-principais/cuidados.png" alt="ícone de cuidados pessoais">
-                    <h3>Cuidados pessoais</h3>
-                    <p>Ajuda com higiene pessoal, incluindo conforto e cuidados com a pele.</p>
-                </div>
-                <div class="card">
-                    <img src="./assets/img-principais/companhia.png" alt="ícone de companhia">
-                    <h3>Bem-estar</h3>
-                    <p>Conversas e atividades recreativas para a saúde mental. Promover momentos de afetividade.</p>
-                </div>
-            </div>
-        </section>
-        <section id="contato">
-            <div id="form-contato">
-               <div class="banner-form"></div>
-                <form>
-                    <h1>Encontre a cuidadora ideal com a <span class="texto__destaque">Afeto</span></h1>
-                    <div>
-                        <label for="nome-tutor">Nome do tutor</label>
-                        <input type="text" name="nome-tutor" id="nome-tutor" placeholder="Digite seu nome" required>
-                    </div>
-                    <div>
-                        <label for="nome-paciente">Nome do paciente</label>
-                        <input type="text" name="nome-paciente" id="nome-paciente" placeholder="Digite o nome do paciente" required>
-                    </div>
-                    <div>
-                        <label for="Idade">Idade</label>
-                        <input type="text" name="idade" id="idade" placeholder="Qual a idade do paciente?" required>
-                    </div>
-                    <div>
-                        <label for="patologia">Patologia</label>
-                        <input type="text" name="patologia" id="patologia" placeholder="Qual a patologia do paciente?" required>
-                    </div>
-                    <div>
-                        <label for="endereco">Endereço</label>
-                        <input type="text" name="endereco" id="endereco" placeholder="Qual seu bairro?" required>
-                    </div>
-                    <div>
-                        <label for="telefone">Telefone</label>
-                        <input type="tel" name="telefone" id="telefone" placeholder="Insira seu telefone" required>
-                    </div>
-                    <div class="container-button" style="width: 100%; display: flex; flex-direction: row; justify-content: center;">
-                        <button class="btn-form">Enviar</button>
-                    </div>
-                </form>
-            </div>
-        </section>
-        <section id="depoimentos">
-            <h2>Depoimentos</h2>
-            <div class="depoimento">
-                <div class="imagem"></div>
-                <div class="content-depoimento">
-                    <p><span class="aspas">"</span>Precisei de alguém de confiança para cuidar de meus pais, em bom período, a cuidadora da Afeto, em seus plantões cuidou com muito carinho e cuidado. Considero a mesma com cuidadoras comprometidas  e confiáveis. <span class="aspas">"</span></p>
-                    <p>Maria José</p>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="logo-footer"><img src="assets/img-principais/logo-footer.png" alt="Logo rodapé"></div>
-        <div class="infos-footer">
-            <p>Venha fazer parte da Afeto</p>
-            <p>Entre em contato conosco</p>
-            <p>Atendemos em toda grande São Paulo</p>
+   <header>
+        <div class="logo">
+            <img src="assets/img/logo-footer.png" alt="Logo da Afeto">
         </div>
-        <div class="creditos">Site e design desenvolvido por Guilherme Macedo</div>
-    </footer>
+        <nav id="menu">
+            <!-- Menu hambúrguer -->
+             <button id="burguer">
+                <span class="linha"></span>
+                <span class="linha"></span>
+                <span class="linha"></span>
+             </button>
+             <ul class="menu-lista">
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Sobre</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Serviços</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Depoimentos</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">Contato</a>
+                </li>
+             </ul>
+        </nav>
+   </header>
+   
     <script src="js/script.js"></script>
 </body>
 </html>
