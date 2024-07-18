@@ -1,12 +1,421 @@
+.texto-destacado{
+    color: #009172;
+}
+
+*{
+    scroll-behavior: smooth;
+}
+
 #home{
     height: 100vh;
-    width: 100%;
-    background: url(./../assets/img-principais/Afeto\ web\ site\ \(1\).png) center center no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    padding: 20px;
+    display: flex;
+    flex-direction:row ;
+    justify-content: center;
+    align-items: center;
+}
+
+.boas-vindas{
+    height: 500px;
+    width: 600px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px;
+    gap: 40px;
 }
 
+.boas-vindas h1{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 32px;
+}
+
+.boas-vindas p{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    color: #818181;
+}
+
+.banner-home{
+    margin-top: 70px;
+    width: 500px;
+}
+
+.banner-home img{
+    height: auto;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.btn-home{
+    width: 180px;
+    padding: 10px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    font-size: 16px;
+    background-color: transparent;
+    border: 2px solid #009172;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-home:hover{
+    color: #f3f2eb;
+    background-color: #009172;
+    font-weight: 500;
+}
+
+.btn-home i{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+/* Cards de destaques inciais */
+aside{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+}
+.card-job{
+    height: 400px;
+    width: 400px;
+    background-color: #f3f2eb;
+    padding: 20px;
+    font-family: 'DM Sans', sans-serif;
+    border-radius: 5px;
+    color: #31302f;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    box-shadow: 3px 1px 15px #24232327;
+}
+
+.card-job img{
+    height: 64px;
+    width: 64px;
+    background-color: #009172;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.card-job h3{
+    font-size: 23px;
+}
+
+.card-job button{
+    border: 2px solid #009172;
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    color: #31302f;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.card-job button:hover{
+    background-color: #009172;
+    color: #f3f2eb;
+    font-weight: 700;
+}
+
+.card-job:nth-child(2){
+    background-color: #009172;
+    font-family: 'DM Sans', sans-serif;
+    border-radius: 20px;
+    color: #f3f2eb;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.card-job:nth-child(2) h3{
+    font-size: 23px;
+}
+
+.card-job:nth-child(2) p{
+    font-weight: 600;
+    font-family: 16px;
+}
+
+.card-job:nth-child(2) button{
+    background-color: transparent;
+    border: 2px solid #f3f2eb;
+    color: #f3f2eb;
+    font-weight: 600;
+    transition: all 0.5s ease-in-out;
+}
+
+.card-job:nth-child(2) button:hover{
+    background-color: #f3f2eb;
+    color: #325746;
+    font-weight: 700;
+    gap: 5px;
+}
+
+.card-job:nth-child(2) img{
+    background-color: #f3f2eb;
+    border-radius: 10px;
+}
+
+/* Sobre */
+section#sobre{
+    height: 100vh;
+    width: 100%;
+    padding: 10px;
+}
+
+.container-textos{
+    height: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.texto{
+    height: 156px;
+    width: 585px;
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+.texto h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 3px;
+    position: relative; 
+}
+
+.texto h3::after {
+    content: '';
+    display: block;
+    width: 50%; /* Largura da borda */
+    height: 3px; /* Altura da borda */
+    background-color: #009172; /* Cor da borda */
+    position: absolute;
+    bottom: -4px; /* Distância da borda para o texto */
+    left: 0;
+}
+
+.texto p{
+    font-size: 16px;
+    text-align: justify;
+}
+
+/* Sessão Artigo */
+#artigo{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #31302f;
+}
+
+.artigo-container{
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.artigo-container h2{
+    font-size: 36px;
+    font-family: 'DM Sans', sans-serif;
+    color: #f3f2eb;
+}
+
+.artigo-container p{
+    color: #f3f2eb;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.banner-artigo{
+    height: auto;
+    width: 50%;
+}
+
+/* Serviços */
+#servicos{
+    height: 120vh;
+    width: 100%;
+    background-color: #ececec;
+    padding: 10px;
+}
+
+#servicos h2{
+    font-size: 36px;
+    font-family: 'DM Sans', sans-serif;
+    color: #31302f;
+    margin: 30px;
+}
+
+
+
+.container-cards{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5rem auto;
+    gap: 40px;
+}
+
+.card{
+    height: 257px;
+    width: 353px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff;
+    font-family:'DM Sans', sans-serif;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 9.8px #bababa;
+}
+
+.img-card{
+    height: 64px;
+    width: 64px;
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 40px;
+    left: 5px;
+}
+
+.img-card img{
+    height: auto;
+    width: 54px;
+}
+
+/* Contato */
+#contato {
+    padding: 20px;
+    height: 70vh;
+    background: url(/assets/img/banner.png) center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden; /* Garante que o pseudo-elemento não saia dos limites */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+#contato h1{
+    text-align: center;
+    color: #f3f2eb;
+    font-size: 32px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+#contato p{
+    font-size: 20px;
+    color: #f3f2eb;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.container-form{
+    height: 500px;
+    width: 800px;
+    position: absolute;
+    left: 3;
+    margin: 140px;
+    display: flex;
+    flex-direction: row;
+    background-color: #31302f;
+    border-radius: 20px;
+}
+
+.banner-form{
+    height: auto;
+    width: 50%;
+    background: url(/assets/img/imagem-6.png) top center no-repeat;
+    background-size: cover;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#form-contato{
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#form-contato div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+#form-contato div > label{
+    font-family: 'DM Sans', sans-serif;
+    color: #f3f2eb;
+    font-size: 18px;
+}
+
+#form-contato div > input{
+    height: 35px;
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+#msg{
+    padding: 10px;
+    font-family: 'DM Sans', sans-serif;
+    border-radius: 10px;
+    height: 100px;
+}
+
+#btn-enviar{
+    background-color: #325746;
+    border: none;
+    border-radius: 10px;
+    color: #f3f2eb;
+    font-size: 16px;
+    width: 200px;
+    height: 40px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Feedbacks */
+#feedback{
+    height: 100vh;
+    width: 100%;
+}

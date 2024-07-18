@@ -1,0 +1,138 @@
+header {
+    height: 14vh;
+    width: 100%;
+    background-color: #325746;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+div.logo img {
+    max-width: 200px;
+    width: 200px;
+}
+
+#menu {
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#burguer {
+    height: 44px;
+    width: 54px;
+    display: none;
+    flex-direction: column;
+    border: none;
+    justify-content: space-around;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.linha {
+    width: 100%;
+    height: 3px;
+    background-color: #f3f2eb;
+    transition: all 0.3s ease-in-out;
+}
+
+#burguer.active .linha:nth-child(1) {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+
+#burguer.active .linha:nth-child(2) {
+    opacity: 0;
+}
+
+#burguer.active .linha:nth-child(3) {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+
+.menu-lista {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.menu-link {
+    font-size: 20px;
+    font-family: 'DM Sans';
+    color: #f3f2eb;
+    position: relative;
+    text-decoration: none;
+}
+
+.menu-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    background: #f3f2eb;
+    transition: width .3s;
+    left: 0;
+    bottom: -5px;
+}
+
+.menu-link:hover::after {
+    width: 100%;
+}
+
+.btn-contato {
+    background-color: #009172;
+    color: #f3f2eb;
+    border: none;
+    border-radius: 10px;
+    width: 250px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'DM Sans', sans-serif;
+    transition: all 0.4s ease-in-out;
+}
+
+.btn-contato i {
+    font-size: 18px;
+}
+
+.btn-contato:hover {
+    background-color: #009172b4;
+}
+
+@media (max-width: 768px) {
+    #burguer {
+        display: flex;
+    }
+
+    .menu-lista {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    #menu.active .menu-lista {
+        display: flex;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

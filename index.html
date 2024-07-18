@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles/header.css">
     <!-- Estilização do Main -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/carrosel.css">
     <!-- Estilização do Footer -->
     <link rel="stylesheet" href="styles/footer.css">
     <!-- Fontes -->
@@ -22,9 +23,11 @@
 </head>
 <body>
    <header>
-        <div class="logo">
-            <img src="assets/img/logo-footer.png" alt="Logo da Afeto">
-        </div>
+        <a href="#">
+            <div class="logo">
+                <img src="assets/img/logo-footer.png" alt="Logo da Afeto">
+            </div>
+        </a>
         <nav id="menu">
             <!-- Menu hambúrguer -->
              <button id="burguer">
@@ -34,16 +37,16 @@
              </button>
              <ul class="menu-lista">
                 <li class="menu-item">
-                    <a href="#" class="menu-link">Sobre</a>
+                    <a href="#sobre" class="menu-link">Sobre</a>
                 </li>
                 <li class="menu-item">
-                    <a href="#" class="menu-link">Serviços</a>
+                    <a href="#servicos" class="menu-link">Serviços</a>
                 </li>
                 <li class="menu-item">
-                    <a href="#" class="menu-link">Depoimentos</a>
+                    <a href="#depoimentos" class="menu-link">Depoimentos</a>
                 </li>
                 <li class="menu-item">
-                    <a href="#" class="menu-link">Contato</a>
+                    <a href="#"><button class="btn-contato"><i class='bx bxl-whatsapp' ></i> Agende sua avaliação</button></a>
                 </li>
              </ul>
         </nav>
@@ -51,9 +54,142 @@
    <main>
         <section id="home">
             <article class="boas-vindas">
-                <h1>Seja bem-vindo à <span class="texto-destacado">Afeto</span>, onde o s</h1>
+                <h1>Seja bem-vindo à <span class="texto-destacado">Afeto</span>, onde o <span class="texto-destacado">cuidado</span> é sempre pessoal e <span class="texto-destacado">caloroso</span>.</h1>
+                <p>Estamos ao seu dispor e compromisso em atender ás suas necessidades em todas as fases da vida.</p>
+                <a href="#conhecer"><button class="btn-home"><i class='bx bx-down-arrow-circle'></i> Conhecer mais</button></a>
+            </article>
+            <div class="banner-home">
+                <img src="assets/img/img-2.png" alt="Cuidadora com idosa">
+            </div>
+        </section>
+        <aside id="conhecer">
+                <div class="card-job">
+                    <div class="img-card"><img src="assets/icons/2.png" alt="Coração"></div>
+                    <h3>Bem-estar</h3>
+                    <p>Oferecemos cuidados completos de saúde para idosos, com acompanhamento médico, fisioterapia, enfermagem e muito mais.</p>
+                    <a href="#">
+                        <button class="btn__card-job">Ver mais <i class='bx bx-right-arrow-alt' ></i></button>
+                    </a>
+                </div>
+                <div class="card-job">
+                    <div class="img-card"><img src="assets/icons/cuidados.png" alt="Cuidados ícone"></div>
+                    <h3>Home Care</h3>
+                    <p>Nosso serviço de Home Care para Idosos oferece atendimento especializado diretamente em sua casa, garantindo conforto, segurança e tranquilidade para toda a família.</p>
+                    <a href="">
+                        <button class="btn__card-job">Ver mais <i class='bx bx-right-arrow-alt' ></i></button>
+                    </a>
+                </div>
+                <div class="card-job">
+                    <div class="img-card"><img src="assets/icons/3.png" alt=""></div>
+                    <h3>Companhia</h3>
+                    <p>Conversas e atividades recreativas para promover a saúde mental. Promover momentos de afetividade.</p>
+                    <a href="">
+                        <button class="btn__card-job">Ver mais <i class='bx bx-right-arrow-alt' ></i></button>
+                    </a>
+                </div>
+        </aside>
+        <section id="sobre">
+            <article class="container-textos">
+                <div class="texto">
+                    <h3>Sobre nós</h3>
+                    <p>Na Afeto, nossa missão é proporcionar uma vida digna, saudável e feliz para o idoso. Entendemos a importância de cuidados personalizados e de alta qualidade, e estamos comprometidos em oferecer serviços que promovam o bem-estar físico, emocional e social dos nossos clientes.</p>
+                </div>
+                <div class="texto">
+                    <h3>Nosso compromisso</h3>
+                    <p>Comprometidos em criar um ambiente seguro, acolhedor e estimulante para os idosos. Acreditamos que cada pessoa merece viver com dignidade e felicidade, independentemente da idade. Nosso compromisso é proporcionar cuidados que promovam a saúde, o bem-estar e a qualidade de vida dos nossos clientes, sempre respeitando suas preferências e necessidades.</p>
+                </div>
+                <div class="texto">
+                    <h3>Acreditamos</h3>
+                    <p>Que o envelhecimento deve ser uma fase da vida marcada por conforto, segurança e felicidade. Na Afeto Cuidado para Idosos, cada idoso é tratado com a mesma atenção e respeito que gostaríamos de receber. Nossa abordagem holística garante que todas as necessidades dos nossos clientes sejam atendidas de maneira integrada e personalizada.</p>
+                </div>
+                <div class="texto">
+                    <h3>Nossa visão</h3>
+                    <p>Nossa visão é ser reconhecidos como referência em cuidados para idosos, destacando-se pela excelência e inovação no atendimento. Queremos transformar a forma como a sociedade cuida e respeita os idosos, promovendo um ambiente de acolhimento e carinho.</p>
+                </div>
             </article>
         </section>
+        <section id="artigo">
+            <article class="artigo-container">
+                <h2>Excelência no cuidado  para o idoso  que <span class="texto-destacado">merece o melhor.</span></h2>
+                <p>Transformar a vida dos idosos em uma experiência plena e enriquecedora, valorizando sua autonomia, independência e bem-estar em todas as suas dimensões: física, mental, social e emocional.</p>
+                <p>Agimos com ética e transparência em todas as nossas ações, prestando contas e mantendo um diálogo aberto e honesto com as famílias.</p>
+            </article>
+            <img src="assets/img/img-3.png" alt="" class="banner-artigo">
+        </section>
+        <section id="servicos">
+            <h2>Conheça os nossos serviços</h2>
+            <div class="container-cards">
+                <div class="card">
+                    <div class="img-card" style="background-color: #BCD2EC;">
+                        <img src="assets/icons/espcial-care.png" alt="Ícone de cuidado especial">
+                    </div>
+                    <h3>Cuidados epseciais</h3>
+                    <p>Auxílio nas atividades de locomoção, transferência e cuidados de higiene, garantindo segurança, conforto e dignidade.</p>
+                </div>
+                <div class="card">
+                    <div class="img-card" style="background-color: #ADA4FF;">
+                        <img src="assets/icons/medic.png" alt="Ícone de checagem médica">
+                    </div>
+                    <h3>Checagem médica</h3>
+                    <p>Auxílio na administração de medicamentos, monitoramento de sintomas e acompanhamento médico regular para garantir o melhor tratamento e controle das doenças.</p>
+                </div>
+                <div class="card">
+                    <div class="img-card" style="background-color:#FF5757 ;">
+                        <img src="assets/icons/emergency.png" alt="Ícone de emergência">
+                    </div>
+                    <h3>Serviço de emergência</h3>
+                    <p>Ao detectar uma situação de emergência, nossa equipe agirá com rapidez e profissionalismo, tomando as medidas necessárias para garantir o bem-estar do idoso.</p>
+                </div>
+                <div class="card">
+                    <div class="img-card" style="background-color: #009172;">
+                        <img src="assets/icons/fisio.png" alt="Ícone de fisioterapia">
+                    </div>
+                    <h3>Fisioterapeuta</h3>
+                    <p> Oferecemos serviços de fisioterapia especializados para idosos, focados na recuperação e melhoria da qualidade de vida.</p>
+                </div>
+                <div class="card" >
+                    <div class="img-card" style="background-color: #2BA6FD;">
+                        <img src="assets/icons/home-care.png" alt="Ícone home care">
+                    </div>
+                    <h3>Home Care</h3>
+                    <p>Afeto Home Care oferece um serviço de cuidados personalizados e amorosos para idosos no conforto de suas próprias casas.</p>
+                </div>
+                <div class="card">
+                    <div class="img-card" style="background-color: #146D80;">
+                        <img src="assets/icons/care.png" alt="Auxílio">
+                    </div>
+                    <h3>Auxilio pessoal</h3>
+                    <p>Oferecemos uma gama abrangente de cuidados pessoais projetados para atender às necessidades individuais de cada cliente.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contato">
+           
+            <h1>Entre em contato conosco!</h1>
+            <p>Preencha o formulário e descubra como a Afeto pode transformar o cuidado com seu ente querido!</p>
+            <div class="container-form">
+               <div class="banner-form"></div>
+            
+            <form id="form-contato">
+                <div>
+                    <label for="nome">Seu nome</label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+                </div>
+                <div>
+                    <label for="email">Qual seu email?</label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+                </div>
+                <div>
+                    <label for="msg">Mensagem</label>
+                    <textarea name="msg" id="msg" placeholder="Escreva sua mensagem"></textarea>
+                </div>
+                <button type="submit" id="btn-enviar">Enviar</button>
+            </form>
+        </div>
+        </section>
+        <div id="feedback">
+            <h2>Feedbacks</h2>
+        </div>
    </main>
     <script src="js/script.js"></script>
 </body>

@@ -1,10 +1,9 @@
-document.getElementById('burguer').addEventListener('click', () => {
-    const menu = document.getElementById('menu-list');
-  
-    if(menu.style.display == 'none'){
-        menu.style.display = 'flex'
-    }else{
-        menu.style.display ='none'
-    }
-  });
-  
+document.addEventListener('DOMContentLoaded', function () {
+    const burguer = document.getElementById('burguer');
+    const menu = document.getElementById('menu');
+
+    burguer.addEventListener('click', function () {
+        this.classList.toggle('active');
+        menu.classList.toggle('active');
+    });
+});
