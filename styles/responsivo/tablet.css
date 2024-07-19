@@ -1,0 +1,235 @@
+/* Cabeçalho */
+/* Cabeçalho */
+@media (max-width: 1024px) {
+    header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px; /* Ajusta o espaçamento */
+        padding: 10px 20px;
+        background-color: #325746;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+
+    .logo {
+        height: auto;
+        width: 150px; /* Ajusta a largura do logo */
+    }
+
+    #burguer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        cursor: pointer;
+    }
+
+    .linha {
+        width: 30px; /* Ajusta a largura das linhas do botão de hambúrguer */
+        height: 3px;
+        background-color: #f3f2eb;
+        border-radius: 3px;
+        transition: all 0.3s ease;
+    }
+
+    .menu-lista {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 70%; /* Ajusta a largura do menu */
+        background-color: #325746;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px; /* Ajusta o espaçamento entre os itens do menu */
+        padding: 20px;
+        padding-top: 60px; /* Ajusta o espaçamento do topo para não ficar atrás do cabeçalho */
+        transform: translateX(100%); /* Inicialmente fora da tela */
+        transition: transform 0.3s ease;
+    }
+
+    .menu-item {
+        width: 100%;
+        color: #f3f2eb;
+        text-decoration: none;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 20px;
+        padding: 10px;
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .menu-lista.active {
+        transform: translateX(0); /* Move o menu para dentro da tela */
+    }
+
+    .btn-contato {
+        width: 80%; /* Ajusta a largura do botão de contato */
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+
+/* Conteúdo */
+@media (max-width: 768px) {
+    #home {
+        height: 130dvh;
+        flex-direction: column-reverse;
+    }
+
+    .boas-vindas {
+        width: 100%;
+        height: auto;
+    }
+
+    .banner-home {
+        width: 70%;
+    }
+
+    aside {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .card-job {
+        width: 90%;
+        height: auto;
+    }
+
+    .container-textos {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .texto {
+        width: 100%;
+    }
+
+    #artigo {
+        flex-direction: column;
+    }
+
+    .artigo-container {
+        width: 100%;
+    }
+
+    .banner-artigo {
+        width: 100%;
+    }
+
+    #servicos {
+        height: auto;
+    }
+
+    .container-cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    #contato {
+        height: auto;
+    }
+
+    .container-form {
+        flex-direction: column;
+        width: 90%;
+        margin: 0;
+    }
+
+    .banner-form {
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+
+    #form-contato {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .boas-vindas {
+        width: 80%;
+        height: auto;
+    }
+
+    .banner-home {
+        width: 80%;
+    }
+
+    aside {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .card-job {
+        width: 90%;
+    }
+
+    section#sobre {
+        height: auto;
+    }
+
+    .container-textos {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .texto {
+        width: 100%;
+    }
+
+    #artigo {
+        flex-direction: column;
+    }
+
+    .artigo-container {
+        width: 100%;
+    }
+
+    .banner-artigo {
+        width: 100%;
+    }
+
+    #servicos {
+        height: auto;
+    }
+
+    .container-cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    #contato {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .container-form {
+        width: 100%;
+        flex-direction: column;
+        margin: 20px 0;
+    }
+
+    .banner-form {
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+
+    #form-contato {
+        width: 100%;
+    }
+}

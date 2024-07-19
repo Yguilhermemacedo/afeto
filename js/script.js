@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
     const burguer = document.getElementById('burguer');
-    const menu = document.getElementById('menu');
+    const menu = document.querySelector('.menu-lista');
 
     burguer.addEventListener('click', function () {
-        this.classList.toggle('active');
+        burguer.classList.toggle('active')
         menu.classList.toggle('active');
     });
 });

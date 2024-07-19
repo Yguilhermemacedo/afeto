@@ -3,11 +3,14 @@
 }
 
 *{
+    padding: 0;
+    margin: 0;
     scroll-behavior: smooth;
 }
 
 #home{
     height: 100vh;
+    width: 100%;
     padding: 20px;
     display: flex;
     flex-direction:row ;
@@ -198,7 +201,7 @@ section#sobre{
 }
 
 .texto h3 {
-    font-size: 20px;
+    font-size: 16px;
     text-transform: uppercase;
     font-weight: 500;
     letter-spacing: 3px;
@@ -318,7 +321,7 @@ section#sobre{
 /* Contato */
 #contato {
     padding: 20px;
-    height: 70vh;
+    height: 100vh;
     background: url(/assets/img/banner.png) center center no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -415,7 +418,60 @@ section#sobre{
 }
 
 /* Feedbacks */
-#feedback{
-    height: 100vh;
+#depoimentos{
+    height: 130vh;
     width: 100%;
+    font-family: 'DM Sans', sans-serif;
+   
+}
+
+#depoimentos h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-top: 6.55rem;
+    position: relative; /* Necessário para a pseudo-classe ::after */
+}
+
+#depoimentos h2::after {
+    content: '';
+    display: block;
+    width: 10%; /* Define a largura da borda como metade do elemento */
+    height: 3px; /* Altura da borda */
+    background-color: #009172; /* Cor da borda */
+    position: absolute;
+    bottom: -10px; /* Ajuste conforme necessário para posicionar a borda */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Ajusta a borda para iniciar no centro */
+}
+.container-feedback{
+    background-color: #325746;
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    position: relative;
+    top: 79px;
+} 
+
+.msg-feedback{
+    height: auto;
+    width: 100%;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.msg-feedback p{
+    width: 90%;
+    margin-left: 3rem;
+    font-size: 18px;
+    color: #31302f;
+}
+
+.aspas{
+    color: #009172;
+    font-size: 45px;
+    font-weight: 700;
 }

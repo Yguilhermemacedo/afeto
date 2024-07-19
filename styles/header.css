@@ -114,25 +114,3 @@ div.logo img {
 .btn-contato:hover {
     background-color: #009172b4;
 }
-
-@media (max-width: 768px) {
-    #burguer {
-        display: flex;
-    }
-
-    .menu-lista {
-        display: none;
-        flex-direction: column;
-        gap: 10px;
-        width: 100%;
-    }
-
-    #menu.active .menu-lista {
-        display: flex;
-    }
-
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-}

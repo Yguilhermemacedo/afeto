@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="styles/reset.css">
     <!-- Estilização do header -->
     <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/responsivo/mobile.css">
     <!-- Estilização do Main -->
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/carrosel.css">
+    <link rel="stylesheet" href="styles/responsivo/mobile.css">
+    <link rel="stylesheet" href="styles/responsivo/desktop.css">
     <!-- Estilização do Footer -->
     <link rel="stylesheet" href="styles/footer.css">
     <!-- Fontes -->
@@ -20,6 +22,8 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- Ícones -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Scroll -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
    <header>
@@ -30,12 +34,13 @@
         </a>
         <nav id="menu">
             <!-- Menu hambúrguer -->
-             <button id="burguer">
+             <button id="burguer" >
                 <span class="linha"></span>
                 <span class="linha"></span>
                 <span class="linha"></span>
              </button>
              <ul class="menu-lista">
+                <li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
                 <li class="menu-item">
                     <a href="#sobre" class="menu-link">Sobre</a>
                 </li>
@@ -52,9 +57,9 @@
         </nav>
    </header>
    <main>
-        <section id="home">
+        <section id="home" data-aos="fade-right">
             <article class="boas-vindas">
-                <h1>Seja bem-vindo à <span class="texto-destacado">Afeto</span>, onde o <span class="texto-destacado">cuidado</span> é sempre pessoal e <span class="texto-destacado">caloroso</span>.</h1>
+                <h1>Seja bem-vindo à <span class="texto-destacado">Afeto</span>, aqui o <span class="texto-destacado">cuidado</span> é <span class="texto-destacado">dedicado</span>.</h1>
                 <p>Estamos ao seu dispor e compromisso em atender ás suas necessidades em todas as fases da vida.</p>
                 <a href="#conhecer"><button class="btn-home"><i class='bx bx-down-arrow-circle'></i> Conhecer mais</button></a>
             </article>
@@ -67,7 +72,7 @@
                     <div class="img-card"><img src="assets/icons/2.png" alt="Coração"></div>
                     <h3>Bem-estar</h3>
                     <p>Oferecemos cuidados completos de saúde para idosos, com acompanhamento médico, fisioterapia, enfermagem e muito mais.</p>
-                    <a href="#">
+                    <a href="#servicos">
                         <button class="btn__card-job">Ver mais <i class='bx bx-right-arrow-alt' ></i></button>
                     </a>
                 </div>
@@ -75,7 +80,7 @@
                     <div class="img-card"><img src="assets/icons/cuidados.png" alt="Cuidados ícone"></div>
                     <h3>Home Care</h3>
                     <p>Nosso serviço de Home Care para Idosos oferece atendimento especializado diretamente em sua casa, garantindo conforto, segurança e tranquilidade para toda a família.</p>
-                    <a href="">
+                    <a href="#servicos">
                         <button class="btn__card-job">Ver mais <i class='bx bx-right-arrow-alt' ></i></button>
                     </a>
                 </div>
@@ -83,7 +88,7 @@
                     <div class="img-card"><img src="assets/icons/3.png" alt=""></div>
                     <h3>Companhia</h3>
                     <p>Conversas e atividades recreativas para promover a saúde mental. Promover momentos de afetividade.</p>
-                    <a href="">
+                    <a href="#servicos">
                         <button class="btn__card-job">Ver mais <i class='bx bx-right-arrow-alt' ></i></button>
                     </a>
                 </div>
@@ -119,42 +124,45 @@
         <section id="servicos">
             <h2>Conheça os nossos serviços</h2>
             <div class="container-cards">
-                <div class="card">
+                <div class="card" data-aos="fade-up"
+     data-aos-anchor-placement="top-center">
                     <div class="img-card" style="background-color: #BCD2EC;">
                         <img src="assets/icons/espcial-care.png" alt="Ícone de cuidado especial">
                     </div>
                     <h3>Cuidados epseciais</h3>
                     <p>Auxílio nas atividades de locomoção, transferência e cuidados de higiene, garantindo segurança, conforto e dignidade.</p>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-up"
+     data-aos-anchor-placement="top-center">
                     <div class="img-card" style="background-color: #ADA4FF;">
                         <img src="assets/icons/medic.png" alt="Ícone de checagem médica">
                     </div>
                     <h3>Checagem médica</h3>
                     <p>Auxílio na administração de medicamentos, monitoramento de sintomas e acompanhamento médico regular para garantir o melhor tratamento e controle das doenças.</p>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-up"
+     data-aos-anchor-placement="top-center">
                     <div class="img-card" style="background-color:#FF5757 ;">
                         <img src="assets/icons/emergency.png" alt="Ícone de emergência">
                     </div>
                     <h3>Serviço de emergência</h3>
                     <p>Ao detectar uma situação de emergência, nossa equipe agirá com rapidez e profissionalismo, tomando as medidas necessárias para garantir o bem-estar do idoso.</p>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <div class="img-card" style="background-color: #009172;">
                         <img src="assets/icons/fisio.png" alt="Ícone de fisioterapia">
                     </div>
                     <h3>Fisioterapeuta</h3>
                     <p> Oferecemos serviços de fisioterapia especializados para idosos, focados na recuperação e melhoria da qualidade de vida.</p>
                 </div>
-                <div class="card" >
+                <div class="card" data-aos="fade-up">
                     <div class="img-card" style="background-color: #2BA6FD;">
                         <img src="assets/icons/home-care.png" alt="Ícone home care">
                     </div>
                     <h3>Home Care</h3>
                     <p>Afeto Home Care oferece um serviço de cuidados personalizados e amorosos para idosos no conforto de suas próprias casas.</p>
                 </div>
-                <div class="card">
+                <div class="card"data-aos="fade-up">
                     <div class="img-card" style="background-color: #146D80;">
                         <img src="assets/icons/care.png" alt="Auxílio">
                     </div>
@@ -167,7 +175,7 @@
            
             <h1>Entre em contato conosco!</h1>
             <p>Preencha o formulário e descubra como a Afeto pode transformar o cuidado com seu ente querido!</p>
-            <div class="container-form">
+            <div class="container-form" data-aos="fade-up">
                <div class="banner-form"></div>
             
             <form id="form-contato">
@@ -187,10 +195,34 @@
             </form>
         </div>
         </section>
-        <div id="feedback">
-            <h2>Feedbacks</h2>
-        </div>
+        <section id="depoimentos">
+            <h2>Depoimentos</h2>
+            <div class="container-feedback">
+                <div class="msg-feedback">
+                   
+                        <p> <span class="aspas">"</span> Maria Aparecida Moreira dos Santos, cuidadora da Afeto, cuidou de três idosas da minha família, mostrando competência e dedicação excepcionais. Inicialmente, cuidou da Sra. Nilza Protti durante seu tratamento contra o câncer, oferecendo cuidados pessoais, administração de medicamentos e acompanhamento hospitalar.</p><br>
+                        <p> Depois, sob minha supervisão, cuidou das Sras. Nelida e Noemia Protti, gerenciando suas necessidades domésticas e médicas, sempre com extrema dedicação. Maria se destacou no preparo de dietas, controle de medicamentos e apoio psicológico, ajudando a combater a depressão comum entre idosos com conversas, passeios e exercícios físicos.
+                        </p><br>
+                        <p> Durante onze anos, Maria demonstrou delicadeza, atenção aos detalhes e uma busca constante por atualização. Sua energia e alegria tornaram a vida das idosas mais agradável e digna. Recomendo Maria Aparecida, da Afeto, sem reservas para qualquer posição de cuidadora de idosos.
+                        </p>
+                        <span class="aspas" style="margin-left: 3rem;">"</span>
+                        <span class="autor">Ronaldo José Zucchi</span>
+                </div>
+                   
+                    <div class="msg-feedback">
+                       
+                            <p><span class="aspas">"</span>Precisei de alguém de confiança para cuidar de meus pais, em bom período, a cuidadora da Afeto, em seus plantões cuidou com muito carinho e cuidado. Considero a mesma com cuidadoras comprometidas  e confiáveis.</p>
+                            <span class="aspas" style="margin-left: 3rem;">"</span>
+                        <div class="autor"></div>
+                    </div>
+            </div>
+           
+        </section>
    </main>
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+         AOS.init();
+    </script>
 </body>
 </html>
