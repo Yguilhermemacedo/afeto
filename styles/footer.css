@@ -1,0 +1,71 @@
+footer {
+    height: auto;
+    width: 100%;
+    background-color: #325746;
+    margin-top: 8rem;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+footer img {
+    height: auto;
+    width: 150px;
+}
+
+.nav-footer {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.atendimento-infos {
+    text-align: center;
+    padding: 20px;
+    color: #f3f2eb;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    color: #f3f2eb;
+}
+
+.nav-links a {
+    color: #f3f2eb;
+}
+
+.atendimento {
+    color: #f3f2eb;
+    text-align: center;
+}
+
+.direitos {
+    height: auto;
+    width: 100%;
+    background-color: #31302f;
+    padding: 15px;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    color: #f3f2eb;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.direitos a {
+    color: #f3f2eb;
+    text-decoration: underline;
+}
