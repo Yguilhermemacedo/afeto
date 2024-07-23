@@ -176,7 +176,7 @@ aside{
 
 /* Sobre */
 section#sobre{
-    height: 100vh;
+    height: auto;
     width: 100%;
     padding: 10px;
 }
@@ -186,7 +186,6 @@ section#sobre{
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -197,7 +196,7 @@ section#sobre{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 40px;
+    gap: 10px;
 }
 
 .texto h3 {
