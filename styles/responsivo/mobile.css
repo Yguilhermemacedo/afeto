@@ -201,6 +201,9 @@
 
     #contato {
         height: 110vh;
+        background: url(/assets/img/banner.png) center center no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
     }
 
     .container-form {
