@@ -323,10 +323,7 @@ section#sobre{
 #contato {
     padding: 20px;
     height: 100vh;
-    background: url(/assets/img/banner.png) center center no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    overflow: hidden; /* Garante que o pseudo-elemento não saia dos limites */
+ 
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -1,8 +1,5 @@
-/* Regras padrão (gerais) aqui */
-
-/* Regras de mídia */
-@media  (min-width: 481px) and (max-width: 768px) {
-    /* Cabeçalho */
+@media (min-width: 769px) and (max-width: 1024px) {
+   
     header {
         width: 100%;
         display: flex;
@@ -22,7 +19,7 @@
         width: 200px;
     }
 
-    #menu {
+    #menu{
         justify-content: flex-end;
     }
 
@@ -76,4 +73,50 @@
     .btn-contato {
         width: 100%;
     }
+
+    /* Main */
+
+    .boas-vindas h1{
+        font-size: 36px;
+    }
+
+    #conhecer{
+        padding: 10px;
+    }
+
+    .card-job{
+        height: 280px;
+        gap: 5px;
+    }
+
+    .card-job:nth-child(2){
+        height: 320px;
+        gap: 8px;
+    }
+
+    #sobre{
+        height: auto;
+       
+    }
+
+    .container-textos{
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        gap: 40px;
+    }
+
+    .texto{
+        height: 300px;
+        width: 400px;
+    }
+
+    .texto h3{
+        font-size: 23px;
+    }
+
+    #servicos{
+        height: auto;
+    }
+
 }

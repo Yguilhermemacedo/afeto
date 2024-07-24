@@ -201,9 +201,11 @@
 
     #contato {
         height: 110vh;
+        background-color: #31302f;
         background: url(/assets/img/banner.png) center center no-repeat;
         background-size: cover;
         background-attachment: fixed;
+        overflow: hidden; /* Garante que o pseudo-elemento não saia dos limites */
     }
 
     .container-form {
