@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Seja um cuidador</title>
+    <link rel="stylesheet" href="/styles/membro-page.css">
+    <link rel="shortcut icon" href="assets/img/icone-afeto.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="" alt="">
+        </div>
+
+    </header>
+    <main>
+        <form id="form-cadastro">
+            <h1>Ficha Cadastral para Novos Cuidadores</h1>
+            <div class="dados-pessoais">
+                <h2>Dados Pessoais</h2>
+                <div class="campo-1">
+                    <div>
+                        <label for="nome">Nome completo <span>*</span></label>
+                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome" maxlength="60" required>
+                    </div>
+                    <div>
+                        <label for="cpf">CPF <span>*</span></label>
+                        <input type="text" name="cpf" id="cpf" placeholder="Ex: 000.000.000-00" maxlength="11" required>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="campo-2">
+                
+                <div>
+                    <label for="msg">Conte um pouco sobre você e sua experiência.</label>
+                    <textarea name="msg" id="msg" placeholder="Escreva um pouco sobre você..."></textarea>
+                </div>
+
+                <div>
+                    <label for="rg">RG <span>*</span></label>
+                    <input type="text" name="rg" id="rg" placeholder="Ex: 00.000.000-0" required maxlength="9">
+                </div>
+            </div>
+            <div class="campo-3">
+                <h2>Localização</h2>
+                <div class="container">
+                    <div>
+                        <label for="endereco">Endereço <span>*</span></label>
+                        <input type="text" name="endereco" id="endereco" placeholder="Rua Brasil 123" required>
+                    </div>
+                    <div>
+                        <label for="complemento">Complemento <span>*</span></label>
+                        <input type="text" name="complemento" id="complemento" placeholder="Ex: ponto de referência" required>
+                    </div>
+                    <div>
+                        <label for="cidade">Cidade <span>*</span></label>
+                        <input type="text" name="cidade" id="cidade" placeholder="Ex: São Paulo" required>
+                    </div>
+                    <div>
+                        <label for="estado">Estado <span>*</span></label>
+                        <input type="text" name="estado" id="estado" placeholder="Ex: São Paulo" required>
+                    </div>
+                    <div>
+                        <label for="cep">CEP <span>*</span></label>
+                        <input type="text" name="cep" id="cep" placeholder="Digite seu CEP" required>
+                    </div>
+                    <div>
+                        <label for="bairro">Bairro <span>*</span></label>
+                        <input type="text" name="bairro" id="bairro" placeholder="Qual seu bairro?" required>
+                    </div>
+                </div>
+            </div>
+            <div class="campo-4">
+                <h2>Contato</h2>
+                <div class="campos-contato">
+                    <div>
+                        <label for="tel"><i class='bx bx-phone'></i> Telefone <span>*</span></label>
+                        <input type="tel" name="tel" id="tel" placeholder="(00) 00000-0000" required>
+                    </div>
+                    <div>
+                        <label for="email"><i class='bx bx-envelope' ></i> Email <span>*</span></label>
+                        <input type="email" name="email" id="email" placeholder="exemplo@exemplo.com" required>
+                    </div>
+                </div>
+            </div>
+            <div class="botao">
+                <button type="submit" id="btn-enviar">Enviar</button>
+            </div>
+        </form>
+    </main>
+    <script src="js/form.js"></script>
+</body>
+</html>

@@ -262,7 +262,7 @@ section#sobre{
 
 /* Serviços */
 #servicos{
-    height: 120vh;
+    height: auto;
     width: 100%;
     background-color: #ececec;
     padding: 10px;

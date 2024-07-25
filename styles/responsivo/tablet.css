@@ -1,5 +1,5 @@
-@media (min-width: 769px) and (max-width: 1024px) {
-   
+@media (min-width:768px) and (max-width:1025px) {
+    /* Cabeçalho */
     header {
         width: 100%;
         display: flex;
@@ -74,49 +74,88 @@
         width: 100%;
     }
 
-    /* Main */
+    /* Conteúdo */
 
-    .boas-vindas h1{
-        font-size: 36px;
+    #home{
+        height: 80vh;
+        display: flex;
+        justify-content: flex-end;
     }
 
-    #conhecer{
-        padding: 10px;
+    .boas-vindas h1{
+        font-size: 40px;
+    }
+
+    .boas-vindas p{
+        color: #31302f;
+    }
+
+    .btn-home{
+        width: 300px;
+    }
+
+    aside{
+        height: 97vh;
+        justify-content: center;
+        gap: 2px;
+        flex-wrap: wrap;
     }
 
     .card-job{
-        height: 280px;
-        gap: 5px;
-    }
-
-    .card-job:nth-child(2){
-        height: 320px;
-        gap: 8px;
+        height: 400px;
+        width: 300px;
     }
 
     #sobre{
-        height: auto;
-       
+       width: 100%;
     }
 
     .container-textos{
+        width: 100%;
         display: flex;
         flex-direction: row;
-        justify-content:center;
-        gap: 40px;
+        height: 100vh;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     .texto{
-        height: 300px;
-        width: 400px;
+        height: 200px;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
     }
 
     .texto h3{
+        font-size: 20px;
+    }
+
+    .texto p{
+        font-size: 20px;
+    }
+
+    #artigo p{
         font-size: 23px;
+        text-align: justify;
     }
 
-    #servicos{
-        height: auto;
+    #contato{
+        height: 80vh;
+        padding: 20px;
     }
 
+    #contato h1{
+        font-size: 36px;
+        color: #31302f;
+    }
+
+    #contato p{
+        font-size: 25px;
+        color: #31302f;
+    }
+
+    .container-form{
+       position: relative;
+    }
 }

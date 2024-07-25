@@ -90,20 +90,27 @@
 
     .boas-vindas h1{
         text-align: left;
-        font-size: 28px;
+        font-size: 32px;
     }
 
     .boas-vindas p{
-        margin-top: 1.25rem;
+        margin-top: 1.55rem;
         text-align: justify;
+        color: #31302f;
     }
 
     .banner-home {
+        display: none;
         width: 100%;
     }
 
     .btn-contato{
+        margin-top: 2rem;
         color: #ffffff;
+    }
+
+    .btn-contato:hover{
+        color: #fff;
     }
 
     #conhecer{
@@ -129,35 +136,34 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: start;
         width: 100%;
-        height: 130vh;
+        height:100vh;
         padding: 20px;
-        background-color: #ffffff;
     }
     
     .container-textos {
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: auto;
-        justify-content: center; 
+        height: 160vh;
+        justify-content: space-around; 
         align-items: center; 
-        gap: 40px;
-        justify-content: center;
+        gap: 90px;
     }
     
     .texto {
         width: 100%;
-        gap: 15px;
+        gap: 20px;
         display: flex;
     }
 
     .texto h3{
-        font-size: 18px;
+        font-size: 24px;
     }
 
     .texto p{
-        font-size: 14px;
+        font-size: 18px;
         color: #727272;
     }
 
