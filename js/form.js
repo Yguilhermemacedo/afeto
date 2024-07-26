@@ -17,6 +17,7 @@ const btnEnviar = document.getElementById('btn-enviar').addEventListener('submit
     }
 });
 
+// Envio dos dados dos cuidadores
 document.getElementById('form-cadastro').addEventListener('submit', function(event) {
     event.preventDefault(); 
 

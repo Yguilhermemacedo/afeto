@@ -185,6 +185,10 @@
         display: none;
     }
 
+    .button-msg{
+        margin-top: 2rem;
+    }
+
     #servicos {
         height: auto;
     }

@@ -260,6 +260,25 @@ section#sobre{
     background-size: cover;
 }
 
+.button-msg{
+    width: 320px;
+    height: 40px;
+    border-radius: 10px;
+    font-family:'DM Sans', sans-serif;
+    border: none;
+    background-color: #fff;
+    font-weight: 600;
+    color: #31302f;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.button-msg:hover{
+    background-color: #009172;
+    color: #fff;
+    font-weight: 700;
+}
+
 /* Serviços */
 #servicos{
     height: auto;

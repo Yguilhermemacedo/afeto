@@ -97,7 +97,7 @@
     aside{
         height: 97vh;
         justify-content: center;
-        gap: 2px;
+        gap: 50px;
         flex-wrap: wrap;
     }
 
@@ -135,9 +135,30 @@
         font-size: 20px;
     }
 
+    #artigo{
+        height: 60vh;
+    }
+
+    #artigo h2{
+        font-size: 43px;
+    }
+
     #artigo p{
-        font-size: 23px;
+        font-size: 24px;
         text-align: justify;
+    }
+
+    .button-msg{
+        height: 60px;
+        font-size: 23px;
+    }
+
+    .artigo-container{
+        width: 100%;
+    }
+
+    .banner-artigo{
+        display: none;
     }
 
     #contato{
@@ -157,5 +178,9 @@
 
     .container-form{
        position: relative;
+    }
+
+    #depoimentos h2{
+        font-size: 38px;
     }
 }

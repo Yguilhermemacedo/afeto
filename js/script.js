@@ -1,3 +1,4 @@
+// Interação com menu
 document.addEventListener('DOMContentLoaded', function () {
     const burguer = document.getElementById('burguer');
     const menu = document.querySelector('.menu-lista');
