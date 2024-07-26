@@ -10,6 +10,392 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet"> 
+    <style>
+        :root{
+    --cor-1:#325746;
+    --cor-2:#31302f;
+    --cor-3:#009172;
+    --ft-principal:'DM Sans',sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--ft-principal);
+}
+
+label{
+    font-weight: 500;
+}
+
+span{
+    font-weight: 700;
+}
+
+
+#form-cadastro{
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fefefe;
+}
+
+h1{
+    font-size: 32px;
+    color: #325746;
+    border-bottom: 2px solid #31302f;
+    padding-bottom: 20px;
+}
+.dados-pessoais{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.25rem;
+    gap: 30px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+.campo-1{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.campo-1 >div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.campo-1  div> label{
+    font-size: 22px;
+    color: #325746;
+    font-weight: 700;
+}
+
+.campo-1 div > input{
+    padding: 10px;
+    font-size: 16;
+    border: none;
+    background-color: #fbfbfb;
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px #8f8f8f61;
+}
+
+.campo-1 div > input::placeholder{
+    font-family: var(--ft-principal);
+    font-weight: 700;
+    color: #afafaf;
+}
+
+.campo-1 div > input:focus{
+    background-color: #fff;
+    outline: none;
+}
+
+.campo-2{
+    height: 400px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+textarea{
+    height: 200px;
+    width: 100%;
+    font-size: 20px;
+    font-family: var(--ft-principal);
+    border: none;
+    padding: 15px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px #8f8f8f61;
+}
+
+.campo-2 >div{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.campo-2 div >label{
+    font-size: 22px;
+}
+
+.campo-2 div > input{
+   
+    padding: 10px;
+    font-size: 16;
+    border: none;
+    background-color: #fbfbfb;
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px #8f8f8f61;
+}
+
+.campo-3{
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.campo-3 div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.campo-3 div > label{
+    font-size: 22px;
+    color: #325746;
+    font-weight: 600;
+    font-weight: 700;
+}
+
+.campo-3 div > input{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    box-shadow: 0px 1px 4px #8f8f8f61;
+    outline: none;
+}
+
+.campo-3 div > input::placeholder{
+    color: #afafaf;
+}
+
+.campo-4{
+    height: 300px;
+}
+
+.campos-contato{
+    height: 200px;
+    width: 100%;
+    margin-top: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.campos-contato > div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.campos-contato div > label{
+    font-size: 22px;
+    color: #325746;
+    font-weight: 600;
+}
+
+.campos-contato div > input{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    box-shadow: 0px 1px 4px #8f8f8f61;
+    outline: none;
+}
+
+.botao{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-enviar{
+    width: 200px;
+    padding: 10px;
+    font-size: 18px;
+    color: #f3f2eb;
+    font-weight: 600;
+    border: none;
+    background-color: #31302f;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+}
+
+#btn-enviar:hover{
+    background-color: #484847;
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+
+    #form-cadastro{
+        height: 150vh;
+        justify-content: space-around;
+    }
+
+    .dados-pessoais{
+        height: 100px;
+    }
+
+    .campo-certificado{
+        height: 100px;
+    }
+
+    label{
+        font-size: 28px;
+    }
+
+    input[type="text"]{
+        font-size: 20px;
+    }
+
+    .campo-1{
+        display: flex;
+        flex-direction: row;
+        height: 200px;
+    }
+
+    .campo-1 div{
+        width: 50%;
+    }
+
+    .campo-2{
+        height: 300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .campo-2 div {
+        width: 100%;
+    }
+
+    #rg{
+        padding: 12px;
+    }
+
+    .campo-3{
+        height: 400px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
+
+    .campo-3 div{
+        width: 40%;
+    }
+
+    .campo-4{
+        width: 100%;
+    }
+
+    .campos-contato{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .campos-contato div,input{
+        width: 100%;
+    }
+
+    #btn-enviar{
+        height: 70px;
+        width: 300px;
+        margin-bottom: 5rem;
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width:1200px) {
+    #form-cadastro{
+       height: 100vh;
+       width: 100%;
+       justify-content: space-around;
+        gap: 30px;
+    }
+
+    label{
+        font-weight: 700;
+        font-size: 28px;
+    }
+
+    .campo-1{
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .campo-1 div{
+        width: 100%;
+    }
+
+    .campo-2{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .campo-2 div{
+        gap: 5px;
+        width: 50%;
+    }
+
+    .campo-3{
+        height: 280px;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+    .container{
+        height: 200px;
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+    .campo-4{
+        width: 100%;
+    }
+
+    .campos-contato{
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .campos-contato div{
+        width: 100%;
+    }
+
+    #btn-enviar{
+        position: relative;
+        bottom: 40px;
+    }
+
+    textarea{
+        height: 150px;
+        font-family: var(--ft-principal);
+        border: none;
+        padding: 15px;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0px 1px 4px #8f8f8f61;
+    }
+}
+    </style>
 </head>
 <body>
     <header>
